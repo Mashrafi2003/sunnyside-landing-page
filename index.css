@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+nav {
+  background-image: url(./images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: top 250px;
+  height: 100vh;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  color: white;
+}
+nav h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 205px;
+}
+nav a:hover {
+  border: 1px solid hsl(168, 34%, 41%);
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.arrow {
+  margin-left: 730px;
+  margin-top: 53px;
+}
+.transform,
+.stand-out {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.img-transform {
+  background-image: url(./images/desktop/image-transform.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.text-transform,
+.text-stand-out {
+  text-align: left;
+  padding: 190px;
+}
+.text-transform h1,
+.text-stand-out h1 {
+  text-align: left;
+}
+.text-transform p,
+.text-stand-out p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: gray;
+}
+.text-transform button,
+.text-stand-out button {
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  font-weight: 900;
+  font-size: 15px;
+}
+.img-stand-out {
+  background-image: url(./images/desktop/image-stand-out.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.photo-graphics-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 80vh;
+}
+.graphics-content {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px;
+  background-position: top 250px;
+  height: 80vh;
+  text-align: center;
+}
+.graphics-content h2 {
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+.photo-content {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px;
+  background-position: top 250px;
+  height: 80vh;
+  text-align: center;
+}
+.photo-content h2 {
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+.testimonial-body {
+  height: 60vh;
+}
+.testimonial-body h3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+  color: gray;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 100px;
+  padding-left: 210px;
+}
+.testimonial {
+  width: 300px;
+  align-items: center;
+  padding-top: 100px;
+  text-align: center;
+}
+.testimonial img {
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 45px;
+}
+.testimonial p {
+  color: black;
+  letter-spacing: 1px;
+}
+.testimonial h5 {
+  margin-top: 40px;
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.testimonial span {
+  color: gray;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+  height: 464px;
+}
+.gallery div {
+  margin: 0;
+  padding: 0;
+}
+.gallery img {
+  width: 374px;
+}
+.footer-main {
+  background-color: hsl(168, 34%, 41%);
+  height: 50vh;
+  margin-bottom: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-nav {
+  margin-bottom: 60px;
+  color: white;
+}
+.footer-nav span {
+  padding: 30px;
+  color: hsl(168, 59%, 21%);
+}
+.footer-icon img {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .transform {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
